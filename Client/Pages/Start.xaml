@@ -1,0 +1,89 @@
+﻿<Page x:Class="Client.Pages.Start"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Start"
+      Background="Transparent">
+
+    <Grid>
+        <Label  Foreground="#9f9f9f" 
+                Content="Welcome To Hi-Lo Game" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="20" Margin="0,33,0,0"
+        />
+        <Label  Foreground="#9f9f9f"
+                Content="IP:" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="264,162,0,0" Height="24" RenderTransformOrigin="0.474,0.569"
+                   
+        />
+        <TextBox Name="ip" 
+                 Background="#1c1c1c" 
+                 Foreground="#9f9f9f"
+                 HorizontalAlignment="Center" 
+                 Margin="0,162,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="144" Height="22" 
+                 RenderTransformOrigin="0.5,0.5" 
+                 AcceptsReturn="True"
+        />
+
+        <Label  Foreground="#9f9f9f"
+                Content="Port:" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="264,196,0,0"
+        />
+        <TextBox Name="port" 
+                 Background="#1c1c1c" 
+                 Foreground="#9f9f9f"
+                 HorizontalAlignment="Center" 
+                 Margin="0,198,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="144" Height="21" 
+                 RenderTransformOrigin="0.5,0.5" 
+                 AcceptsReturn="True"
+        />
+        <Button Margin="0,240,0,0"
+                Content="Start"
+                Foreground="#9f9f9f"
+                Background="#1c1c1c" 
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center" 
+                Width="72" 
+                Click="Start_Click" 
+        />
+        <TextBox    Name="name" 
+                    Background="#1c1c1c" 
+                    Foreground="#9f9f9f"
+                    HorizontalAlignment="Center" 
+                    Margin="0,127,0,0" 
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Top" 
+                    Width="144" Height="21" 
+                    RenderTransformOrigin="0.5,0.5" 
+                    AcceptsReturn="True"
+        />
+        <Label  Foreground="#9f9f9f"
+                Content="Name:" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="264,126,0,0" Height="24" RenderTransformOrigin="0.5,0.5"
+                   
+        />
+        <Label Name="error"
+               HorizontalContentAlignment="Center"
+               Content="" 
+               Foreground="Red" 
+               HorizontalAlignment="Center" 
+               Margin="0,64,0,0" 
+               VerticalAlignment="Top" 
+               Height="58" Width="282"
+        />
+    </Grid>
+</Page>

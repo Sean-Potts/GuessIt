@@ -1,0 +1,57 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Hi-Lo Game"
+        Height="450"
+        Width="800" 
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Border Background="#3f3f3f" CornerRadius="10">
+        <Border Background="#1f1f1f" CornerRadius="10" Margin="1,1,1,1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="700" />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Hi-Lo Game" 
+                           VerticalAlignment="Top" 
+                           HorizontalAlignment="Left" 
+                           Foreground="#9f9f9f"
+                           FontSize="15"
+                           Padding="10" 
+                           Margin="350,0,0,0" Height="35" Width="100"
+                />
+
+                <Button Content="X"
+                        HorizontalAlignment="Left"
+                        Foreground="#9f9f9f"
+                        Background="#1f1f1f"
+                        BorderBrush="#1f1f1f"
+                        FontSize="15"
+                        Click="Exit_Click" Grid.Column="1" Margin="70,5,0,5" RenderTransformOrigin="0.428,0.483" Width="18"
+                />
+
+                <Frame  Name="View" 
+                        Background="Transparent"
+                        Grid.Row="1" Margin="10,10,10,10"
+                        NavigationUIVisibility="Hidden" 
+                        Grid.ColumnSpan="2"
+                />
+            </Grid>
+        </Border>
+    </Border>
+</Window>

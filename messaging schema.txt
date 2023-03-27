@@ -1,0 +1,20 @@
+client message: 
+"name" for starting a new game
+"name|guess" for making a guess or only
+
+"name|'end'" for ending the game early
+"name|'exit'" for comfirming the disconnect
+
+"name|'lifeline'" for the lifeline message (server only responds when disconnecting)
+
+
+Server message:
+"result|min|max" for updating min and max
+"result" if they won
+
+result could equal: hi, lo, won, load
+hi being: guess was too high
+Load being: loaded previous state (error)
+
+"ok" for ending the game early
+"bye" for comfirming the disconnect
